@@ -1,0 +1,34 @@
+For this project, we would like to create a pipeline where
+
+- User Invokes API
+- API Invokes Lambda | Amazon API Gateway
+- Contains Logic for CRUD Operation for DynamoDB table | AWS Lambda
+- Amazon DynamoDB
+
+Step1: Create Lambda IAM Role
+
+- Role: Lambda Role
+	- Permission: DynamoDB and CloudWatch Log
+	- Create Role: lambda-apigateway-role
+
+Step2: Create Lambda Function
+- python 3.7 as Runtime
+- use lambda-apigateway-role
+
+Step3: Create DynamoDB table
+
+Step4: Create API (REST API)
+- Use API Gateway console to create
+- Give API name as DynamoDBOperations
+- Add resource
+- create POST method
+- Choose the lambda function that we created
+- Deploy API
+
+Step5: Deploy the API
+
+Step6: Running our solution
+
+Step7: Clean up
+
+Reference: https://github.com/saha-rajdeep/serverless-lab
